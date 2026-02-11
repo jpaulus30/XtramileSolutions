@@ -25,10 +25,10 @@
         npm install cucumber-html-reporter
     
     2. Setup environment
-        Create .env file:
-           - BASE_URL=https://www.saucedemo.com
-           - USERNAME=standard_user
-           - PASSWORD=secret_sauce
+       Create .env file:
+       - BASE_URL=https://www.saucedemo.com
+       - USERNAME=standard_user
+       - PASSWORD=secret_sauce
     
     4. Run tests
         npx cucumber-js
