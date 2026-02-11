@@ -19,12 +19,12 @@
 
 * How to Run (Local)
     1. Install dependencies
-        npm install
-        npx playwright install
-        npm install @playwright/test @cucumber/cucumber dotenv
-        npm install cucumber-html-reporter
+       - npm install
+       - npx playwright install
+       - npm install @playwright/test @cucumber/cucumber dotenv
+       - npm install cucumber-html-reporter
     
-    2. Setup environment
+    3. Setup environment
        Create .env file:
        - BASE_URL=https://www.saucedemo.com
        - USERNAME=standard_user
