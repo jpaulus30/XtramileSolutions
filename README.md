@@ -31,7 +31,7 @@
        - PASSWORD=secret_sauce
     
     4. Run tests
-        npx cucumber-js
+       - npx cucumber-js
 
 * Test Report
     1. Generate HTML report:
