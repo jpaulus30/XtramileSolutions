@@ -1,0 +1,481 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "cart;add-and-remove-item-from-cart",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Add and remove item from cart",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3732047099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user is logged in",
+            "match": {
+              "location": "step-definitions/cart.steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3904305650
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user adds item to cart",
+            "match": {
+              "location": "step-definitions/cart.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 245025908
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "cart badge should show \"1\"",
+            "match": {
+              "location": "step-definitions/cart.steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40853230
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "user removes item from cart",
+            "match": {
+              "location": "step-definitions/cart.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 337204927
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "cart badge should not be visible",
+            "match": {
+              "location": "step-definitions/cart.steps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7502075
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10086733282
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "cart",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Cart",
+    "tags": [],
+    "uri": "features/cart.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "checkout;complete-checkout-flow",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Complete checkout flow",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3585145935
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user is logged in and on products page",
+            "match": {
+              "location": "step-definitions/checkout.steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3943487515
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "user has item in cart",
+            "match": {
+              "location": "step-definitions/checkout.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 723754235
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "user completes checkout",
+            "match": {
+              "location": "step-definitions/checkout.steps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 718012136
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "order should be completed successfully",
+            "match": {
+              "location": "step-definitions/checkout.steps.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12396853
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6852322405
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "checkout",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Checkout",
+    "tags": [],
+    "uri": "features/checkout.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login;login-with-multiple-credentials",
+        "keyword": "Scenario Outline",
+        "line": 10,
+        "name": "Login with multiple credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3415310371
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user is on login page",
+            "match": {
+              "location": "step-definitions/login.steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1859993521
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user logs in with \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "location": "step-definitions/login.steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2038329526
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "login result should be \"success\"",
+            "match": {
+              "location": "step-definitions/login.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8405428
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 8404172305
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-multiple-credentials",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "Login with multiple credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3376595120
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user is on login page",
+            "match": {
+              "location": "step-definitions/login.steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2431585173
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user logs in with \"locked_out_user\" and \"secret_sauce\"",
+            "match": {
+              "location": "step-definitions/login.steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2204812042
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "login result should be \"error\"",
+            "match": {
+              "location": "step-definitions/login.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 91569451
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 941821113
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-multiple-credentials",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Login with multiple credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 614271301
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user is on login page",
+            "match": {
+              "location": "step-definitions/login.steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1001730247
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user logs in with \"standard_user\" and \"wrong_password\"",
+            "match": {
+              "location": "step-definitions/login.steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 439394957
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "login result should be \"error\"",
+            "match": {
+              "location": "step-definitions/login.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8526268
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4585345044
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login",
+    "tags": [],
+    "uri": "features/login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "logout;logout-from-application",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Logout from application",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 473455335
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user is logged in",
+            "match": {
+              "location": "step-definitions/cart.steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1358418508
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user logs out",
+            "match": {
+              "location": "step-definitions/logout.steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1064051421
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "user should be redirected to login page",
+            "match": {
+              "location": "step-definitions/logout.steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5094323
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 883724311
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "logout",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Logout",
+    "tags": [],
+    "uri": "features/logout.feature"
+  }
+]
