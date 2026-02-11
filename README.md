@@ -33,11 +33,11 @@
     4. Run tests
         npx cucumber-js
 
-Test Report
-1. Generate HTML report:
-    - node scripts/generate-report.js
-2. Open:
-    - reports/cucumber-report.html
+* Test Report
+    1. Generate HTML report:
+       - node scripts/generate-report.js
+    2. Open:
+      - reports/cucumber-report.html
 
 CI Support
 
