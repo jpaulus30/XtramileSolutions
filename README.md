@@ -36,8 +36,9 @@
 * Test Report
     1. Generate HTML report:
        - node scripts/generate-report.js
+         
     2. Open:
-      - reports/cucumber-report.html
+       - reports/cucumber-report.html
 
 CI Support
 
